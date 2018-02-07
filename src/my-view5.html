@@ -13,6 +13,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/paper-card/paper-card.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/communication-icons.html">
 
 <dom-module id="my-view5">
   <template>
@@ -24,8 +26,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-      <div  align="center"> 
-      <paper-card image="images/pagina/piccinelli.jpg"  style="margin-top:8px;width: 500px;height: 300px">
+      <div class="white" align="center"> 
+      <paper-card image="images/pagina/piccinelli.jpg"  style="margin-top:8px;width: 500px;height: auto">
         <div class="card-content">
           <h4><p>Dra.Gabriella Piccinelli Bocchi</p></h4>
           <h5>            
@@ -49,11 +51,82 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <p>e-mail: itzamnagp@gmail.com</p>
           </h5>
         </div>
-        <div class="card-actions">
-          <paper-button>share</paper-button>
-          <paper-button>Explore!</paper-button>
+    </paper-card>   
+    <div class="white">
+      <paper-card heading="Desarrollador Web Jr" image="images/pagina/aron.png" class="white" style="margin-top:8px;width: 200px;height: 450px;">
+        <div class="card-content">
+          <h5>          
+            <p>Rodrigo Aaron Martinez Tellez</p>
+            <p>e-mail: arontellezm@gmail.com</p>                
+          </h5>
         </div>
-    </paper-card>     
+        <div class="card-actions">  
+          <paper-button>
+            <div role="listbox">
+              <!-- phone -->
+              <paper-icon-item>
+                  <iron-icon icon="communication:phone" slot="item-icon">
+                  </iron-icon>
+                <paper-item-body two-line>
+                  <div>Celular</div>
+                  <div secondary>55 41 29 74 91</div>
+                </paper-item-body>
+              </paper-icon-item>          
+            </div>
+          </paper-button>                                                  
+          <paper-button>
+            <div role="listbox">
+            <!-- github -->
+              <paper-icon-item>
+                  <iron-icon src="images/pagina/Octocat.jpg">
+                  </iron-icon>
+                <paper-item-body two-line>
+                  <div><a href="https://github.com/AaronRebel09">Github</a></div>
+                  <div secondary>@AaronRebel09</div>
+                </paper-item-body>
+              </paper-icon-item>          
+            </div>
+          </paper-button>  
+          </div>    
+      </paper-card>
+
+      <paper-card heading="Desarrollador Web Jr" image="images/pagina/uriel.jpg" class="white" style="margin-top:8px;width: 200px;height: 400px;">
+        <div class="card-content">
+          <h5>          
+            <p>Pedro Uriel Martinez Martinez</p>
+            <p>e-mail: petrvs2310@gmail.com</p>                
+          </h5>
+        </div>
+        <div class="card-actions">  
+          <paper-button>
+            <div role="listbox">
+              <!-- phone -->
+              <paper-icon-item>
+                  <iron-icon icon="communication:phone" slot="item-icon">
+                  </iron-icon>
+                <paper-item-body two-line>
+                  <div>Celular</div>
+                  <div secondary>55 26 55 00 26</div>
+                </paper-item-body>
+              </paper-icon-item>          
+            </div>
+          </paper-button>                                                  
+          <paper-button>
+            <div role="listbox">
+            <!-- github -->
+              <paper-icon-item>
+                  <iron-icon src="images/pagina/Octocat.jpg">
+                  </iron-icon>
+                <paper-item-body two-line>
+                  <div><a href="https://github.com/petrvs2">Github</a></div>
+                  <div secondary>@petrvs2</div>
+                </paper-item-body>
+              </paper-icon-item>          
+            </div>
+          </paper-button>  
+          </div>    
+      </paper-card>
+    </div>
   </template>
 
   <script>
